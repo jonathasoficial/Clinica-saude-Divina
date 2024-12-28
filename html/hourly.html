@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="/css/table.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!-- Menu de Navegação -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="about.html">Sobre a Clínica</a></li>
+                <li><a href="hourly.html">Horário de Atendimento</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Conteúdo Principal -->
+        <main class="main">
+            <!-- Cabeçalho -->
+            <header class="header">
+
+                <img class="logo" src="/img/logo.webp" alt="logo">
+                <h1>Clínica Saúde Divina</h1>
+                <img class="clinica" src="/img/horario de atendimento.webp" alt="Clínica Saúde Divina">
+
+            </header>
+
+            <!-- Conteúdo -->
+            <section class="content">
+
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos uma variedade de serviços médicos com horários flexíveis para atender às suas necessidades. Confira abaixo nossos horários e preços para cada serviço:</p>
+
+                <table class="tableh">
+                    <thead>
+                        <tr>
+                            <th>serviços</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>feriados</th>
+                        </tr>
+                    </thead>           
+                    
+                    <tbody>
+                        <tr>
+                            <th>Clínica Geral</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th>08h - 14h</th>
+                        </tr>
+
+                        <tr>
+                            <th>Psicologia</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th>08h - 14h</th>
+                        </tr>
+
+                        <tr>
+                            <th>Pediatria</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th> - </th>
+                        </tr>
+
+                        <tr>
+                            <th>Oftalmologia</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th> - </th>
+                        </tr>
+
+                        <tr>
+                            <th>Ginecologia</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th> - </th>
+                        </tr>
+
+                        <tr>
+                            <th>Obstetrícia</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th> - </th>
+                        </tr>
+
+                        <tr>
+                            <th>Dermatologia</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th> - </th>
+                        </tr>
+
+                        <tr>
+                            <th>Nutrição</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th> - </th>
+                        </tr>
+
+                        <tr>
+                            <th>Fisioterapia</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th> - </th>
+                        </tr>
+
+                        <tr>
+                            <th>Cardiologia</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th> - </th>
+                        </tr>
+
+                        <tr>
+                            <th>Endocrinologia</th>
+                            <th>08h - 19h</th>
+                            <th>08h - 14h</th>
+                            <th> - </th>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+    
+                <section class="agendamento">
+                    <h2>Agendamento de Consultas</h2>
+                    <p>Selecione o serviço desejado, a data e veja os preços aplicáveis:</p>
+                    
+                    <!-- Formulário de Agendamento -->
+                    <form id="agendamentoForm">
+                        <!-- Serviço -->
+                        <label for="servico">Serviço:</label>
+                        <select id="servico" name="servico" required>
+                            <option value="clinica">Clínica Geral</option>
+                            <option value="psicologia">Psicologia</option>
+                            <option value="pediatria">Pediatria</option>
+                            <option value="oftalmologia">Oftalmologia</option>
+                            <option value="Ginecologia">Ginecologia</option>
+                            <option value="Obstetrícia">Obstetrícia</option>
+                            <option value="Dermatologia">Dermatologia</option>
+                            <option value="Nutrição">Nutrição</option>
+                            <option value="Fisioterapia">Fisioterapia</option>
+                            <option value="Cardiologia">Cardiologia</option>
+                            <option value="Endocrinologia">Endocrinologia</option>
+                        </select>
+                
+                        <!-- Data -->
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" required>
+                
+                        <!-- Resultado do preço -->
+                        <div id="precoResultado">
+                            <p>Preço: <span id="preco">R$ 0,00</span></p>
+                        </div>
+                
+                        <!-- Botão de Agendar -->
+                        <button type="submit">Agendar</button>
+                    </form>
+                </section>
+    
+            </section>
+
+            <!-- Rodapé -->
+            <footer class="footer">
+                <p>Contato: (11) 1234-5678 | WhatsApp: (11) 91234-5678</p>
+                <p>Endereço: Rua Saúde, 123 - Centro, São Paulo - SP</p>
+                <p>&copy; 2024 Clínica Saúde Divina</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
